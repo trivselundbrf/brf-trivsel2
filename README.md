@@ -95,6 +95,27 @@
 
 </body>
 </html>
+<h2>Beställningsformulär</h2>
+<form action="https://formsubmit.co/trivselundbrf@gmail.com" method="POST">
+  <p><strong>Vad vill du beställa?</strong></p>
+  <label><input type="checkbox" name="Standardanalys" value="Ja"> Standardiserad trivselanalys</label><br>
+  <label><input type="checkbox" name="Fritextanalys" value="Ja"> Fritextanalys med ordmoln</label><br>
+  <label><input type="checkbox" name="Extraanalys" value="Ja"> Extra analys / anpassad rapport</label><br><br>
 
+  <p><strong>Kontaktuppgifter</strong></p>
+  <label>Namn:<br><input type="text" name="Namn" required></label><br><br>
+  <label>Mejladress:<br><input type="email" name="Email" required></label><br><br>
+  <label>Telefon:<br><input type="tel" name="Telefon"></label><br><br>
+  <label>BRF Namn:<br><input type="text" name="BRF" required></label><br><br>
+
+  <p><strong>Övriga meddelanden</strong></p>
+  <textarea name="Meddelande" rows="4" style="width:100%;"></textarea><br><br>
+
+  <!-- Skicka tillbaks användaren till din hemsida efter inskick -->
+  <input type="hidden" name="_next" value="https://dinhemsida.se/tack">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Skicka beställning</button>
+</form>
   
 
