@@ -79,7 +79,7 @@
       Du behöver endast förse oss med mejladresser till medlemmar i din BRF, så sköter vi resten.
     </p>
     <p>
-      <strong>Kostnad:</strong> 2 850 kr exkl moms för enkät- och rapportframställning.
+      <strong>Pris för standardval:</strong> från 2 800 - 5 300 kr exkl moms för enkät- och rapportframställning enligt dina val i vårt standardutbud
     </p>
     <p>
       Om ytterligare frågor eller analyser än vårt standardutbud önskas tillkommer pris enligt överenskommelse.
