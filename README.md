@@ -79,7 +79,7 @@
       Du behöver endast förse oss med mejladresser till medlemmar i din BRF, så sköter vi resten.
     </p>
     <p>
-      <strong>Pris för standardval:</strong> från 2 800 - 5 300 kr exkl moms för enkät- och rapportframställning enligt dina val i vårt standardutbud
+      <strong>Pris för standardval:</strong> från 2 800 kr exkl moms för enkät- och rapportframställning enligt dina val i vårt standardutbud
     </p>
     <p>
       Om ytterligare frågor eller analyser än vårt standardutbud önskas tillkommer pris enligt överenskommelse.
@@ -98,12 +98,13 @@
 <h2>Beställningsformulär</h2>
 <form action="https://formsubmit.co/trivselundbrf@gmail.com" method="POST">
   <p><strong>Vad vill du beställa?</strong></p>
-  <label><input type="checkbox" name="Standardanalys" value="Ja"> Standardiserad trivselanalys</label><br>
-  <label><input type="checkbox" name="Fritextanalys" value="Ja"> Fritextanalys med ordmoln</label><br>
-  <label><input type="checkbox" name="Extraanalys" value="Ja"> Extra analys / anpassad rapport</label><br><br>
+  <label><input type="checkbox" name="Standardanalys" value="Ja"> Nivå 1: Trivselanalys, standard (2 800 kr exkl moms)</label><br>
+  <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 2: Nivå 1 + Fritextanalys (3 800 kr exkl moms) </label><br>
+   <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 3: Nivå 1 + Nivå 2 + Delresultat per vald grupp (3 800 kr exkl moms + 1 000 kr per vald grupp, kan vara kön, port eller ålder) </label><br>
+  <label><input type="checkbox" name="Extraanalys" value="Ja"> Nivå 3: Nivå 1 + Nivå 2 + Egna tillägg (3 800 kr exkl moms + 500 kr per tillägg)) </label><br><br>
 
   <p><strong>Kontaktuppgifter</strong></p>
-  <label>Namn:<br><input type="text" name="Namn" required></label><br><br>
+  <label>Namn på beställare:<br><input type="text" name="Namn" required></label><br><br>
   <label>Mejladress:<br><input type="email" name="Email" required></label><br><br>
   <label>Telefon:<br><input type="tel" name="Telefon"></label><br><br>
   <label>BRF Namn:<br><input type="text" name="BRF" required></label><br><br>
