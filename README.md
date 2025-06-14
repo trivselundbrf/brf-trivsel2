@@ -3,52 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trivselanalys för BRF Kvarnholmen</title>
+  <title>Trivselanalys för BRF:er</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
-    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    h2 { color: #2c3e50; }
-    a.button { display: inline-block; background: #2980b9; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
-    .diagram { max-width: 100%; margin: 1rem 0; }
-    footer { text-align: center; font-size: 0.9rem; color: #888; padding: 1rem; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1a73e8;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Trivselanalys för BRF:er på Kvarnholmen</h1>
-  <p>Digitala enkäter och smart analys för din bostadsrättsförening</p>
-</header>
+  <header>
+    <h1>Trivselanalys för BRF:er</h1>
+    <p>Digitala enkäter och smart analys för din bostadsrättsförening till ett rimligt pris</p>
+  </header>
 
-<section>
-  <h2>Vad erbjuder vi?</h2>
-  <ul>
-    <li>Digital trivselenkät via Google Forms</li>
-    <li>Index: Trivsel, Trygghet, Gemenskap</li>
-    <li>Fritextanalys och ordmoln</li>
-    <li>PDF-rapport med diagram och kommentarer</li>
-    <li>Kostnadsfri pilot för BRF:er på Kvarnholmen</li>
-  </ul>
-  <a class="button" href="https://forms.gle/QY6vbCjxBPLKmKjt5" target="_blank">Testa en pilotenkät</a>
-</section>
+  <main>
+    <h2>Vad erbjuder vi?</h2>
+    <ul>
+      <li>Standardiserad digital trivselenkät</li>
+      <li>Index: Trivsel, Trygghet, Gemenskap</li>
+      <li>Fritextanalys och ordmoln</li>
+      <li>PDF-rapport med diagram och kommentarer</li>
+    </ul>
+    <p>
+      Du behöver endast förse oss med mejladresser till medlemmar i din BRF, så sköter vi resten.
+    </p>
+    <p>
+      <strong>Kostnad:</strong> 2 850 kr exkl moms för enkät- och rapportframställning.
+    </p>
+    <p>
+      Om ytterligare frågor eller analyser än vårt standardutbud önskas tillkommer pris enligt överenskommelse.
+    </p>
+    <p>
+      <a href="#">Klicka här för att läsa mer om vårt standardutbud</a>
+    </p>
+  </main>
 
-<section>
-  <h2>Exempeldata och resultat</h2>
-  <img class="diagram" src="exempeldiagram.png" alt="Exempel på indexdiagram">
-  <p><strong>Trygghetsindex:</strong> 4,2 &nbsp;&nbsp; <strong>Gemenskapsindex:</strong> 3,1</p>
-</section>
-
-<section>
-  <h2>Intresserad?</h2>
-  <p>Vi bokar gärna ett kort digitalt möte där vi visar rapporten och upplägget för er styrelse.</p>
-  <p><strong>Kontakt:</strong> [Ditt namn], [E-post], [Telefonnummer]</p>
-</section>
-
-<footer>
-  &copy; 2025 Trivselanalys Kvarnholmen
-</footer>
+  <footer>
+    &copy; 2025 Trivselanalys för BRF:er
+  </footer>
 
 </body>
 </html>
+
+  
 
