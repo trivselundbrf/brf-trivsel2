@@ -1,2 +1,54 @@
-# brf-trivsel2
-Trivselundersökningar i BRF
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivselanalys för BRF Kvarnholmen</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
+    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    h2 { color: #2c3e50; }
+    a.button { display: inline-block; background: #2980b9; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
+    .diagram { max-width: 100%; margin: 1rem 0; }
+    footer { text-align: center; font-size: 0.9rem; color: #888; padding: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Trivselanalys för BRF:er på Kvarnholmen</h1>
+  <p>Digitala enkäter och smart analys för din bostadsrättsförening</p>
+</header>
+
+<section>
+  <h2>Vad erbjuder vi?</h2>
+  <ul>
+    <li>Digital trivselenkät via Google Forms</li>
+    <li>Index: Trivsel, Trygghet, Gemenskap</li>
+    <li>Fritextanalys och ordmoln</li>
+    <li>PDF-rapport med diagram och kommentarer</li>
+    <li>Kostnadsfri pilot för BRF:er på Kvarnholmen</li>
+  </ul>
+  <a class="button" href="https://forms.gle/QY6vbCjxBPLKmKjt5" target="_blank">Testa en pilotenkät</a>
+</section>
+
+<section>
+  <h2>Exempeldata och resultat</h2>
+  <img class="diagram" src="exempeldiagram.png" alt="Exempel på indexdiagram">
+  <p><strong>Trygghetsindex:</strong> 4,2 &nbsp;&nbsp; <strong>Gemenskapsindex:</strong> 3,1</p>
+</section>
+
+<section>
+  <h2>Intresserad?</h2>
+  <p>Vi bokar gärna ett kort digitalt möte där vi visar rapporten och upplägget för er styrelse.</p>
+  <p><strong>Kontakt:</strong> [Ditt namn], [E-post], [Telefonnummer]</p>
+</section>
+
+<footer>
+  &copy; 2025 Trivselanalys Kvarnholmen
+</footer>
+
+</body>
+</html>
+
