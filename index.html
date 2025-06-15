@@ -12,12 +12,13 @@
     a.button { display: inline-block; background: #2980b9; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
     .diagram { max-width: 100%; margin: 1rem 0; }
     footer { text-align: center; font-size: 0.9rem; color: #888; padding: 1rem; }
+    label { display: block; margin: 0.5rem 0; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Trivselanalys för BRF:er </h1>
+  <h1>Trivselanalys för BRF:er</h1>
   <p>Digitala enkäter och smart analys för din bostadsrättsförening till ett rimligt pris</p>
 </header>
 
@@ -28,20 +29,25 @@
     <li>Index: Trivsel, Trygghet, Gemenskap</li>
     <li>Fritextanalys</li>
     <li>PDF-rapport med diagram och kommentarer</li>
-    </section>
-    </ul>
-    <p> Förse oss bara med mejladresser till medlemmar i din BRF, så sköter vi resten.<p>
-      <strong>Pris för standardval:</strong> från 2 800 kr exkl moms för enkät- och rapportframställning beroende på dina val i vårt standardutbud
-    <p>Om man önskar ytterligare frågor eller analyser än de som ingår i standardutbudet önskas tillkommer pris enligt överenskommelse. </p>
   </ul>
+
+  <p>Förse oss bara med mejladresser till medlemmar i din BRF, så sköter vi resten.</p>
+  <p><strong>Pris för standardval:</strong> från 2 800 kr exkl moms för enkät- och rapportframställning beroende på dina val i vårt standardutbud.</p>
+  <p>Om man önskar ytterligare frågor eller analyser än de som ingår i standardutbudet tillkommer pris enligt överenskommelse.</p>
 </section>
+
+<section>
   <h2>Intresserad?</h2>
   <p>Vi bokar gärna ett kort digitalt möte där vi visar rapporten och upplägget för er styrelse.</p>
+
   <p><strong>Vad vill du beställa?</strong></p>
-  <label><input type="checkbox" name="Standardanalys" value="Ja"> Nivå 1: Trivselanalys, standard (2 800 kr exkl moms)</label><br>
-  <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 2: Nivå 1 + Fritextanalys (3 800 kr exkl moms) </label><br>
-   <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 3: Nivå 1 + Nivå 2 + Delresultat per vald grupp (3 800 kr exkl moms + 700 kr per vald grupp, kan vara kön, port eller ålder) </label><br>
-  <label><input type="checkbox" name="Extraanalys" value="Ja"> Beställning utanför standardutbudet i Nivå 1-3 (500 kr/timme för tillägg utanför basutbud) </label><br><br>
+  <form>
+    <label><input type="checkbox" name="nivå1" value="Ja"> Nivå 1: Trivselanalys, standard (2 800 kr exkl moms)</label>
+    <label><input type="checkbox" name="nivå2" value="Ja"> Nivå 2: Nivå 1 + Fritextanalys (3 800 kr exkl moms)</label>
+    <label><input type="checkbox" name="nivå3" value="Ja"> Nivå 3: Nivå 1 + Nivå 2 + Delresultat per vald grupp (3 800 kr + 700 kr/grupp)</label>
+    <label><input type="checkbox" name="extra" value="Ja"> Beställning utanför standardutbudet (500 kr/timme)</label>
+  </form>
+
   <p><strong>Kontakt:</strong> [Ditt namn], [E-post], [Telefonnummer]</p>
 </section>
 
