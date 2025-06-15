@@ -1,4 +1,4 @@
-n BRF<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,9 @@ n BRF<!DOCTYPE html>
     .diagram { max-width: 100%; margin: 1rem 0; }
     footer { text-align: center; font-size: 0.9rem; color: #888; padding: 1rem; }
     label { display: block; margin: 0.5rem 0; }
+    textarea { width: 100%; max-width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; margin-top: 0.5rem; }
+    button { background: #27ae60; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #219150; }
   </style>
 </head>
 <body>
@@ -43,16 +46,34 @@ n BRF<!DOCTYPE html>
 </section>
 
 <section>
-  <h2>Prisförslag</h2>
-  <p><strong>Produkter</strong></p>
-  <form>
-    <label><input type="checkbox" name="nivå1" value="Ja"> Bas: Trivselanalys, standard (2 800 kr exkl moms)</label>
-    <label><input type="checkbox" name="nivå2" value="Ja"> Medium: Bas + Fritextanalys (3 800 kr exkl moms)</label>
-    <label><input type="checkbox" name="nivå3" value="Ja"> Premium: Bas + Fritextanalys + Delresultat nedbrutet per vald redovisningsgrupp (3 800 kr + 700 kr/grupp)</label>
-    <label><input type="checkbox" name="nivå4" value="Ja"> Priserna för ovan avser maximalt 100 undersökta individer. För mer än 100 individer upp till 300 individer tillkommer 1 000 kr för varje alternativ </label>
-    <label><input type="checkbox" name="extra" value="Ja"> Beställning utanför standardutbudet (500 kr/timme)</label>
-  </form>
+  <h2>Beställningsformulär</h2>
+  <form id="orderForm">
+    <fieldset>
+      <legend><strong>Välj ett alternativ</strong></legend>
+      <label><input type="radio" name="main_package" value="bas_100"> Bas – Max 100 (2 800 kr)</label>
+      <label><input type="radio" name="main_package" value="bas_100plus"> Bas – 100+ (3 800 kr)</label>
+      <label><input type="radio" name="main_package" value="medium_100"> Medium – Max 100 (3 800 kr)</label>
+      <label><input type="radio" name="main_package" value="medium_100plus"> Medium – 100+ (4 800 kr)</label>
+      <label><input type="radio" name="main_package" value="premium_100"> Premium – Max 100 (4 500 kr)</label>
+      <label><input type="radio" name="main_package" value="premium_100plus"> Premium – 100+ (5 500 kr)</label>
+    </fieldset>
 
+    <div id="addonSection" style="display:none;">
+      <fieldset>
+        <legend><strong>Tilläggsbeställning (valfritt)</strong></legend>
+        <label><input type="radio" name="addon" value="addon_100"> Max 100 (1 000 kr)</label>
+        <label><input type="radio" name="addon" value="addon_100plus"> 100+ (2 000 kr)</label>
+        <label for="addonDetails">Beskriv tillägget:</label>
+        <textarea id="addonDetails" name="addonDetails" rows="4" placeholder="Ange vad tilläggsbeställningen gäller..."></textarea>
+      </fieldset>
+    </div>
+
+    <br>
+    <button type="submit">Skicka beställning</button>
+  </form>
+</section>
+
+<section>
   <p>För mer information om alternativen i standardutbudet, se vår 
     <a href="https://github.com/trivselundbrf/brf-trivsel2/raw/main/Trivselpresentation_BRFer.pptx" target="_blank">
       PowerPoint-presentation
@@ -65,6 +86,29 @@ n BRF<!DOCTYPE html>
   Kontakta 
   <a href="mailto:trivselundbrf@gmail.com">trivselundbrf@gmail.com</a>
 </footer>
+
+<script>
+  const form = document.getElementById('orderForm');
+  const addonSection = document.getElementById('addonSection');
+  const mainRadios = document.querySelectorAll('input[name="main_package"]');
+
+  mainRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      addonSection.style.display = 'block';
+    });
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const main = form.main_package.value;
+    const addon = form.addon ? form.addon.value : "Inget tillägg";
+    const details = form.addonDetails.value;
+
+    alert(`Tack för din beställning!\n\nValt paket: ${main}\nTillägg: ${addon}\nDetaljer: ${details}`);
+    // Här kan du koppla på formulärdata till backend / e-post / databas om du vill
+  });
+</script>
 
 </body>
 </html>
