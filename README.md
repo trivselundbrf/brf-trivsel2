@@ -101,7 +101,7 @@
   <label><input type="checkbox" name="Standardanalys" value="Ja"> Nivå 1: Trivselanalys, standard (2 800 kr exkl moms)</label><br>
   <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 2: Nivå 1 + Fritextanalys (3 800 kr exkl moms) </label><br>
    <label><input type="checkbox" name="Fritextanalys" value="Ja"> Nivå 3: Nivå 1 + Nivå 2 + Delresultat per vald grupp (3 800 kr exkl moms + 700 kr per vald grupp, kan vara kön, port eller ålder) </label><br>
-  <label><input type="checkbox" name="Extraanalys" value="Ja"> Nivå 4: Nivå 3 + tilläggsbeställning utanför standardutbudet i Nivå 1-3 (3 800 kr exkl moms + 500 kr/timme för tilläggsbeställning)) </label><br><br>
+  <label><input type="checkbox" name="Extraanalys" value="Ja"> Beställning utanför standardutbudet i Nivå 1-3 (500 kr/timme för tillägg utanför basutbud) </label><br><br>
 
   <p><strong>Kontaktuppgifter</strong></p>
   <label>Namn på beställare:<br><input type="text" name="Namn" required></label><br><br>
