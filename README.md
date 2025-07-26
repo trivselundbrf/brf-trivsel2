@@ -70,22 +70,25 @@
   <main>
     <h2>Vad erbjuder vi?</h2>
     <ul>
-      <li>Standardiserad digital trivselenkät</li>
-      <li>Index: Trivsel, Trygghet, Gemenskap</li>
-      <li>Fritextanalys och ordmoln</li>
-      <li>PDF-rapport med diagram och kommentarer</li>
+      <li>STANDARDISERADE DIGITALA ATTITYD – OCH TRIVSELENKÄTER (Pris: fr. 2 800 kr exklusive moms):</li>
+      <li>Uppföljningsbara indexmått för olika delområden som rör trivsel</li>
+      <li>Frekvenstabeller, grafik, fritextanalys </li>
+      <li>PDF-rapport med resultat och kommentarer</li>
+      <li>Granskningskontroller och kvalitetssäkring av data</li>
+      
     </ul>
     <p>
-      Du behöver endast förse oss med mejladresser till medlemmar i din BRF, så sköter vi resten.
+      Förse oss med en fil med mejladresser, namn, lghnr, adress (port) för medlemmarna i din BRF, så sköter vi resten.
     </p>
     <p>
       <strong>Pris för standardval:</strong> från 2 800 kr exkl moms för enkät- och rapportframställning enligt dina val i vårt standardutbud
     </p>
     <p>
-      Om ytterligare frågor eller analyser än vårt standardutbud önskas tillkommer pris enligt överenskommelse.
+      Vi erbjuder även andra typer av digitala enkäter, såsom  behovsundersökningar eller insamling som som styrelsen behöver från de boende. Kanske i samband med gemensamma frågor
+      inom BRF, ex. inglasning av balkonger, frågoställningar om föreningslokal, gemensamma inköp/upphandlingar etc (pris enligt överenskommelse).
     </p>
     <p>
-      <a href="#">Klicka här för att läsa mer om vårt standardutbud</a>
+      <a href="#">Klicka här för att läsa mer om vårt standardutbud (standardiserade digitala attityd- och trivselenkäter)</a>
     </p>
   </main>
 
