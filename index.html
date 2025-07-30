@@ -174,11 +174,32 @@
   </section>
 
   <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Har du frågor? Hör gärna av dig till oss:</p>
-       <p>E-post: <a href="mailto: trivselundbrf@gmail.com "> trivselundbrf@gmail.com </a><br>
-    </p>
-  </section>
+  <h2>Kontakt</h2>
+  <p>Har du frågor? Hör gärna av dig till oss:</p>
+  <p>
+    E-post: 
+    <a href="mailto:trivselundbrf@gmail.com">trivselundbrf@gmail.com</a>
+  </p>
+
+  <form action="https://formsubmit.co/trivselundbrf@gmail.com" method="POST">
+    <!-- Dölj Formsubmit-bekräftelser (valfritt) -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Vart ska användaren skickas efter skickat formulär? -->
+    <input type="hidden" name="_next" value="https://dindomän.se/tack.html">
+
+    <label for="namn">Namn:</label><br>
+    <input type="text" id="namn" name="namn" required><br><br>
+
+    <label for="epost">E-post:</label><br>
+    <input type="email" id="epost" name="email" required><br><br>
+
+    <label for="meddelande">Meddelande:</label><br>
+    <textarea id="meddelande" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Skicka</button>
+  </form>
+</section>
+
 
   <footer>
     &copy; 2025 AlfaBeta AB – Enkäter för BRF:er
