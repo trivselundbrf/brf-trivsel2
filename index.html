@@ -1,114 +1,188 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trivselanalys för BRF </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlfaBeta – Digitala Enkäter för BRF</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
-    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    h2 { color: #2c3e50; }
-    a.button { display: inline-block; background: #2980b9; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
-    .diagram { max-width: 100%; margin: 1rem 0; }
-    footer { text-align: center; font-size: 0.9rem; color: #888; padding: 1rem; }
-    label { display: block; margin: 0.5rem 0; }
-    textarea { width: 100%; max-width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; margin-top: 0.5rem; }
-    button { background: #27ae60; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #219150; }
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background: #234e70;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #1e3d58;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #234e70;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.2rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      background: #234e70;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #1e3d58;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Trivselanalys för BRF:er</h1>
-  <p>Digitala enkäter och smart analys för din bostadsrättsförening till ett rimligt pris</p>
-</header>
+  <header>
+    <h1>AlfaBeta</h1>
+    <p>Digitala enkäter för bostadsrättsföreningar – enkelt, prisvärt och professionellt</p>
+  </header>
 
-<section>
-  <h2>Varför göra en trivselundersökning?</h2>
-  <p>En trivselundersökning ger styrelsen i en BRF viktig kunskap om hur de boende upplever sitt boende, tryggheten, grannsämjan och styrelsens arbete. Resultatet skapar ett faktabaserat underlag som kan ligga till grund för förbättringar, prioriteringar och ökad dialog med medlemmarna.</p>
-  <p>Det blir lättare att fatta beslut, öka engagemanget i föreningen och förebygga konflikter – samtidigt som de boende känner sig lyssnade på.</p>
-</section>
+  <nav>
+    <a href="#tjanster">Tjänster</a>
+    <a href="#sa-funkar-det">Så funkar det</a>
+    <a href="#bestall">Beställ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
-<section>
-  <h2>Vad erbjuder vi?</h2>
-  <ul>
-    <li>Digital trivselenkät</li>
-    <li>Index: Trivsel, Trygghet, Gemenskap</li>
-    <li>Fritextanalys</li>
-    <li>PDF-rapport med diagram och kommentarer</li>
-  </ul>
-
-  <p>Förse oss bara med mejladresser till medlemmar i din BRF, så sköter vi resten.</p>
-  <p><strong>Pris för standardval:</strong> från 2 800 kr exkl moms för enkät- och rapportframställning beroende på dina val i vårt standardutbud.</p>
-  <p>Om man önskar ytterligare frågor eller analyser än de som ingår i standardutbudet tillkommer pris enligt överenskommelse.</p>
-</section>
-
-<section>
-  <h2>Beställningsformulär</h2>
-  <form id="orderForm">
-    <fieldset>
-      <legend><strong>Välj ett alternativ</strong></legend>
-      <label><input type="radio" name="main_package" value="bas_100"> Bas – Max 100 (2 800 kr)</label>
-      <label><input type="radio" name="main_package" value="bas_100plus"> Bas – 100+ (3 800 kr)</label>
-      <label><input type="radio" name="main_package" value="medium_100"> Medium – Max 100 (3 800 kr)</label>
-      <label><input type="radio" name="main_package" value="medium_100plus"> Medium – 100+ (4 800 kr)</label>
-      <label><input type="radio" name="main_package" value="premium_100"> Premium – Max 100 (4 500 kr)</label>
-      <label><input type="radio" name="main_package" value="premium_100plus"> Premium – 100+ (5 500 kr)</label>
-    </fieldset>
-
-    <div id="addonSection" style="display:none;">
-      <fieldset>
-        <legend><strong>Tilläggsbeställning (valfritt)</strong></legend>
-        <label><input type="radio" name="addon" value="addon_100"> Max 100 (1 000 kr)</label>
-        <label><input type="radio" name="addon" value="addon_100plus"> 100+ (2 000 kr)</label>
-        <label for="addonDetails">Beskriv tillägget:</label>
-        <textarea id="addonDetails" name="addonDetails" rows="4" placeholder="Ange vad tilläggsbeställningen gäller..."></textarea>
-      </fieldset>
+  <section id="tjanster">
+    <h2>Våra Tjänster</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Trivselmätningar</h3>
+        <p>Skapa indextal och följ upp stämningen i föreningen över tid.</p>
+      </div>
+      <div class="card">
+        <h3>Attitydundersökningar</h3>
+        <p>Ta reda på vad medlemmarna tycker om styrelsen, kommunikation och förvaltning.</p>
+      </div>
+      <div class="card">
+        <h3>Informationshämtning</h3>
+        <p>Samla in intressen, förslag och svar inför viktiga beslut eller projekt.</p>
+      </div>
+      <div class="card">
+        <h3>Behovskartläggningar</h3>
+        <p>Kartlägg vad medlemmarna vill inför t.ex. renovering eller nya tjänster.</p>
+      </div>
     </div>
+  </section>
 
-    <br>
-    <button type="submit">Skicka beställning</button>
-  </form>
-</section>
+  <section id="sa-funkar-det">
+    <h2>Så fungerar det</h2>
+    <ol>
+      <li>Ni skickar en excelfil med namn, e-post, lägenhetsnummer och adress.</li>
+      <li>Vi skickar ut enkäten till samtliga medlemmar digitalt.</li>
+      <li>Vi sammanställer svaren, analyserar och skickar en rapport med grafik och indextal.</li>
+    </ol>
+  </section>
 
-<section>
-  <p>För mer information om alternativen i standardutbudet, se vår 
-    <a href="https://github.com/trivselundbrf/brf-trivsel2/raw/main/Trivselpresentation_BRFer.pptx" target="_blank">
-      PowerPoint-presentation
-    </a>.
-  </p>
-</section>
+  <section id="bestall">
+    <h2>Beställ en enkät</h2>
+    <form>
+      <label for="brf">Namn på BRF:</label>
+      <input type="text" id="brf" name="brf" required />
 
-<footer>
-  &copy; 2025 Grannskapet<br>
-  Kontakta 
-  <a href="mailto:trivselundbrf@gmail.com">trivselundbrf@gmail.com</a>
-</footer>
+      <label for="kontaktperson">Kontaktperson:</label>
+      <input type="text" id="kontaktperson" name="kontaktperson" required />
 
-<script>
-  const form = document.getElementById('orderForm');
-  const addonSection = document.getElementById('addonSection');
-  const mainRadios = document.querySelectorAll('input[name="main_package"]');
+      <label for="email">E-post:</label>
+      <input type="email" id="email" name="email" required />
 
-  mainRadios.forEach(radio => {
-    radio.addEventListener('change', () => {
-      addonSection.style.display = 'block';
-    });
-  });
+      <label for="tel">Telefonnummer:</label>
+      <input type="tel" id="tel" name="tel" />
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+      <label for="typ">Typ av undersökning:</label>
+      <select id="typ" name="typ">
+        <option value="trivsel">Trivselmätning</option>
+        <option value="attityd">Attitydundersökning</option>
+        <option value="information">Informationshämtning</option>
+        <option value="behov">Behovskartläggning</option>
+      </select>
 
-    const main = form.main_package.value;
-    const addon = form.addon ? form.addon.value : "Inget tillägg";
-    const details = form.addonDetails.value;
+      <label for="fil">Bifoga excelfil:</label>
+      <input type="file" id="fil" name="fil" />
 
-    alert(`Tack för din beställning!\n\nValt paket: ${main}\nTillägg: ${addon}\nDetaljer: ${details}`);
-    // Här kan du koppla på formulärdata till backend / e-post / databas om du vill
-  });
-</script>
+      <label for="meddelande">Övrig kommentar:</label>
+      <textarea id="meddelande" name="meddelande" rows="4"></textarea>
+
+      <button type="submit">Skicka beställning</button>
+    </form>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Har du frågor? Hör gärna av dig till oss:</p>
+    <p>E-post: <a href="mailto:kontakt@alfabeta.se">kontakt@alfabeta.se</a><br>
+    Telefon: 070-XXX XX XX</p>
+  </section>
+
+  <footer>
+    &copy; 2025 AlfaBeta AB – Enkäter för BRF:er
+  </footer>
 
 </body>
 </html>
